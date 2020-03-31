@@ -27,4 +27,4 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 ./scripts/feeds install -a
 #修改banner
 rm -rf package/base-files/files/etc/banner
-cp -f ../banner package/base-files/files/etc/
+cp -f ../newifi-y1-banner package/base-files/files/etc/banner
