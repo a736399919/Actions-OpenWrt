@@ -5,7 +5,6 @@
 # Author: P3TERX
 # Blog: https://p3terx.com
 #=================================================
-cd openwrt
 #修改lan口地址
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 
@@ -21,7 +20,6 @@ sed -i 's/OpenWrt/FK20100010/g' package/kernel/mac80211/files/lib/wifi/mac80211.
 #添加自定义插件
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #添加Lienol的插件包
-cd openwrt
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 ./scripts/feeds update -a
 ./scripts/feeds install -a
