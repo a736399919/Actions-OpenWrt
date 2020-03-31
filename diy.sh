@@ -27,6 +27,7 @@ sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.
 ./scripts/feeds install -a
 #添加自己repo的插件的软连接
 ln -s ../../luci-theme-argon2.1 ./package/
+ln -s ../../luci-theme-argon1.x ./package/
 #修改banner
 rm -rf package/base-files/files/etc/banner
 cp -f ../newifi-y1-banner package/base-files/files/etc/banner
