@@ -22,9 +22,9 @@ sed -i 's/OpenWrt/FK20100010/g' package/kernel/mac80211/files/lib/wifi/mac80211.
 #cp -rf lede/package/lean package
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 #添加Lienol的插件包
-sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-./scripts/feeds update -a
-./scripts/feeds install -a
+#sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+#./scripts/feeds update -a
+#./scripts/feeds install -a
 #添加自己repo的插件的软连接
 ln -s ../../luci-theme-argon2.1 ./package/
 ln -s ../../luci-theme-argon1.x ./package/
